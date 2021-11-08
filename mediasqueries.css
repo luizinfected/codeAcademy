@@ -1,0 +1,35 @@
+@media (max-width: 768px){ 
+	
+	.closecol{
+		display: none;
+	}
+	.links{
+		display: none;
+	}
+	html, body{
+		width: 100%;
+	}
+	img{
+		width: 100%;
+	}
+
+	.cabecalho{
+		max-width: 100%;
+	}
+
+}
+@media (max-width: 1040px){ 
+	
+	.links{
+		display: none;
+	}
+
+}
+
+@media (max-width: 1152px){ 
+	
+	.responsivecol{
+		display: none;
+	}
+
+}
