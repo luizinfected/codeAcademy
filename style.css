@@ -2,29 +2,29 @@
 
 *{
 	font-family: 'Roboto', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.2s linear;
+	margin:0; padding:0;
+	box-sizing: border-box;
+	outline: none; border:none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: 0.1s linear;
 }
 html{
-    overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
+	overflow-x: hidden;
+	scroll-padding-top: 9rem;
+	scroll-behavior: smooth;
 }
 html::-webkit-scrollbar{
-    width: .8rem;
+	width: .8rem;
 }
 
 html::-webkit-scrollbar-track{
-    background: transparent;
+	background: transparent;
 }
 
 html::-webkit-scrollbar-thumb{
-    background: #fff;
-    border-radius: 5rem;
+	background: #fff;
+	border-radius: 5rem;
 }
 
 
@@ -33,7 +33,9 @@ body{
 }
 
 .site-content{
-	background-image: linear-gradient(to right top, #4b4453, #4b4453, #4b4453, #4b4453, #4b4453, #50465e, #544969, #574c74, #5b538f, #585bad, #4a64cc, #1d6fec);
+	/*background-image: linear-gradient(to right top, #4b4453, #4b4453, #4b4453, #4b4453, #4b4453, #50465e, #544969, #574c74, #5b538f, #585bad, #4a64cc, #1d6fec);*/
+	background-image: linear-gradient(to right top, #302d33, #79435b, #c65e4f, #e09c17, #a8eb12);
+	 background-image: linear-gradient(to left bottom, #302d33, #302e38, #2e2f3d, #2a3043, #233248);
 	object-fit: cover;
 	background-size: 100%;
 	width: 100%;
@@ -42,9 +44,25 @@ header{
 	height: 100px;
 	background-color: #302d33;
 	color: white;
+	box-shadow: rgba(0, 0, 0, 1.0) 5px 5px 20px 5px;
 }
+
+@keyframes logo-bar{
+	from{
+
+	}
+
+	to{
+		margin-top: 1px;
+		border-bottom: solid 4px #fff;
+
+	}
+}
+
 .logo{
-	padding: 1.2em;
+	animation: logo-bar 0.5s 6 alternate;
+	margin-top: 1em;
+	margin-left: 1em;
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 1.5em;
@@ -57,20 +75,25 @@ header{
 	font-size: 2em;
 	line-height: 0.7em;
 }
+.logo:hover{
+	/*border-bottom: solid 3px #fff;*/
+	/*padding-top: 1px;*/
 
+}
 .firstcontent img{
-	padding-right: 0px;
-	padding-left: 0px;
+	margin-top: 2em;
+	border: solid 2px #fff;
+	/*padding: 20px;*/
 	display: flex;
 	justify-content: center;
-	border-radius: 0.1em;
+	/*border-radius: 0.3em;*/
 	width: 100%;
 	height: 768px;
 }
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 0px;
-    padding-left: 0px;
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 0px;
+	padding-left: 0px;
 }
